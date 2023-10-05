@@ -1,7 +1,7 @@
 <?php
 $host = 'localhost';
-$user = 'gabdcomb_tudoale';
-$pass = 'tudoale6846';
-$db   = 'gabdcomb_tudoale';
+$user = 'seu_usuario';
+$pass = 'sua_senha';
+$db   = 'seu_bancodados';
 $tabela = '11_neighbor';
 ?>
