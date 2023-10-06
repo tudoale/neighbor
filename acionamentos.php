@@ -1,4 +1,6 @@
 <?php
+// Arquivo responsável por atualizar status dos botões
+// Esse código é compatível com PHP 8.1
 include ('conexao.php'); //$tabela
  
 // conexão e seleção do banco de dados
