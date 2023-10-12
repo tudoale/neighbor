@@ -23,8 +23,9 @@ if ($f = mysqli_fetch_array($res))
 	$status_bt1= $f['status_bt1'];
 	$status_bt2= $f['status_bt2'];
 	$tempo = $f['tempo'];
+	$comando = $f['comando'];
 	
-	echo $botao_1.$botao_2.$tempo ;
+	echo $botao_1.$botao_2.$comando.$tempo ;
 }
  
 // fecha a conexão
