@@ -11,6 +11,7 @@ $tempo = $_GET['t'];
 $botao = $_GET['b'];
 $acionamento = $_GET['a'];
 $status_botao = $_GET['s'];
+$comando = $_GET['c'];
 $botao_r = "botao_".$botao;
 $status_b = "status_bt".$status_botao;
 //echo $botao_r." = ".$acionamento;
@@ -27,6 +28,11 @@ if($status_botao >= 1 & $status_botao <= 2) {
 
 if($tempo > 0 & $tempo < 101) {
 	$results = "UPDATE $tabela SET tempo  = '$tempo' WHERE id='$id'";
+	$resultado_configs = mysqli_query($con, $results);
+}
+
+if(!empty($comando))	{
+	$results = "UPDATE $tabela SET comando  = '$comando' WHERE id='$id'";
 	$resultado_configs = mysqli_query($con, $results);
 }
 
